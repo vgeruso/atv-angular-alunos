@@ -1,0 +1,110 @@
+<table mat-table [dataSource]="alunos" matSort class="mat-elevation-z8">
+  <!-- Position Column -->
+  <ng-container matColumnDef="matricula">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      style="color: white; font-weight: bold; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      Matricula
+    </th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      style="color: grey; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      {{element.matricula}}
+    </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="nome">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      style="color: white; font-weight: bold; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      Nome
+    </th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      style="color: grey; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      {{element.nome}}
+    </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="av1">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      style="color: white; font-weight: bold; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      Av1
+    </th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      style="color: grey; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      {{element.av1}}
+    </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="av2">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      style="color: white; font-weight: bold; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      Av2
+    </th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      style="color: grey; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      {{element.av2}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="av3">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      style="color: white; font-weight: bold; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      Av3
+    </th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      style="color: grey; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      {{element.av3}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="media">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      style="color: white; font-weight: bold; font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      Media
+    </th>
+    <td
+      mat-cell
+      *matCellDef="let element"
+      style="color: rgb(63, 63, 63); font-family: Roboto, Arial, Helvetica, sans-serif;"
+    >
+      {{element.media}}
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

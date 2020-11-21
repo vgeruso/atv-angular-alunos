@@ -1,0 +1,11 @@
+table {
+  width: 250%;
+  min-width: 450px;
+  max-width: 450px;
+  margin-top: -129%;
+  background: #94bff0;
+}
+
+th {
+  background: #518dd1;
+}

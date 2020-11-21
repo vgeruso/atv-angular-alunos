@@ -1,0 +1,7 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+mat-grid-tile {
+  height: 100%;
+  background: white;
+}
+mat-grid-list {
+}
